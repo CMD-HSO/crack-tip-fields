@@ -1,0 +1,9 @@
+key,value
+R_model,4.0000001
+thickness,0.0099999998
+step_time,1
+n_frames,9
+K_end_MPa_sqrt_m,40
+rate_thr,1e-05
+n_inner,5184
+n_elements,6272

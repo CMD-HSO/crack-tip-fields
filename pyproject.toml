@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crack-tip-fields"
+version = "1.0.0"
+description = "Crack-tip fields of isotropic, anisotropic and bicrystal (grain-boundary) cracks and Abaqus K-field boundary conditions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0-only" }
+authors = [
+    { name = "Charleen Baumann" },
+    { name = "Thomas Seifert", email = "thomas.seifert@hs-offenburg.de" },
+]
+keywords = ["fracture mechanics", "crack-tip field", "Stroh formalism", "interface crack",
+            "anisotropic elasticity", "Abaqus"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.22", "scipy>=1.8", "matplotlib>=3.5"]
+
+[project.optional-dependencies]
+app = ["ipywidgets>=7.6", "ipykernel>=6.0"]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["crack_tip_fields"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,5 @@
+numpy>=1.22
+scipy>=1.8
+matplotlib>=3.5
+ipywidgets>=7.6
+ipykernel>=6.0

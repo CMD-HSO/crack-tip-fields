@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "crack_tip_fields: crack-tip fields of isotropic, anisotropic and bicrystal cracks and Abaqus K-field boundary conditions"
+version: 1.0.0
+date-released: 2026-11-18
+license: AGPL-3.0-only
+repository-code: "https://github.com/CMD-HSO/crack-tip-fields"
+# doi: 10.5281/zenodo.TODO         # TODO: concept DOI from Zenodo after the first release
+authors:
+  - family-names: Baumann
+    given-names: Charleen
+    affiliation: "Offenburg University of Applied Sciences"
+    orcid: "https://orcid.org/0009-0001-8746-8399"
+  - family-names: Seifert
+    given-names: Thomas
+    affiliation: "Offenburg University of Applied Sciences"
+keywords:
+  - fracture mechanics
+  - crack-tip field
+  - Stroh formalism
+  - interface crack
+  - anisotropic elasticity
+  - Abaqus
