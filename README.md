@@ -316,7 +316,7 @@ If you use this software, please cite the accompanying article and the archived 
 > C. Baumann, T. Seifert, Crack-tip fields in anisotropic materials and at grain boundaries as boundary
 > conditions for finite element models: the Python toolkit crack_tip_fields and its application to a grain
 > boundary crack with crystal plasticity (submitted).
-> Software: crack_tip_fields v1.0.0, Zenodo, https://doi.org/TODO
+> Software: crack_tip_fields v1.0.0, Zenodo, https://doi.org/10.5281/zenodo.24347608
 
 ## License
 

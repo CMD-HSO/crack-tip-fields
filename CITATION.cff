@@ -5,7 +5,7 @@ version: 1.0.0
 date-released: 2026-11-18
 license: AGPL-3.0-only
 repository-code: "https://github.com/CMD-HSO/crack-tip-fields"
-# doi: 10.5281/zenodo.TODO         # TODO: concept DOI from Zenodo after the first release
+doi: 10.5281/zenodo.24347608
 authors:
   - family-names: Baumann
     given-names: Charleen
