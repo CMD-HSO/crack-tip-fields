@@ -211,5 +211,20 @@ analytical component). Under mixed-mode loading the anti-plane stresses reach 54
 
 Small-scale yielding (case C6, manuscript, Section 5): the evaluated results of the six runs are in `3D_crystal_plasticity/C6_run*/results/`
 (`export/`: element, nodal, crack-face and ring data per frame; `ssy_f<N>_J.csv`, `_s22.csv`, `_circle.csv`: J, opening stress and
-stresses on the circle of frame N; `analysis_max1e-4/summary.csv`: plastic zone, K deviation and CTOD per frame). The tables and figures of
-Section 5 are generated from them with the scripts in `scripts/c6_figures/`.
+stresses on the circle of frame N; `analysis_max1e-4/summary.csv`: plastic zone, K deviation and CTOD per frame; for R = 4 mm also `analysis_max1e-3/` and
+`analysis_max1e-2/` for the higher thresholds of the total slip). The tables and figures of Section 5 are generated from them with the
+scripts in `scripts/c6_figures/` (run them in this folder, e.g. `python c6_overview.py <folder of the C6_run* directories> fe_ssy_R.pdf`):
+
+| Figure / table of the manuscript | Script |
+|---|---|
+| Plastic zone for R = 4 mm (`fe_ssy_zone_R`) | `c6_zone_map.py` |
+| Influence of the model size (`fe_ssy_R`) | `c6_overview.py` |
+| Deviation of the fields at r = 1 mm (`fe_ssy_Kfield_max`) | `c6_kfield.py` (data) and `c6_kfield_paper.py` (figure) |
+| Criterion for the model size (`fe_ssy_crit`) | `c6_criterion.py` |
+| Active slip systems and slip per system (`fe_ssy_latent_sys`) | `c6_active_systems.py` |
+| Stress on the grain boundary (`fe_ssy_interface_lin`) | `c6_interface.py` |
+| Back stress on the grain boundary (`fe_ssy_backstress`) | `c6_backstress.py` |
+| Plastic zone normalised with K_I/tau_0 (`fe_ssy_norm`) | `c6_normalised.py` |
+| Generalised Schmid factors, elastic estimate of the zone (`fe_ssy_estimate`, tables of Section 5.4) | `c6_schmid.py` |
+| Numbers of Sections 5.3 and 5.4 given in the text (same K_I/tau_0, slip by distance, correlation) | `c6_numbers.py` |
+| Comparison of the six runs (summary) | `c6_compare.py` |

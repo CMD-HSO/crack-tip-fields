@@ -24,8 +24,8 @@ Abaqus FE sub-models** (boundary-layer / K-field models).
 | `scripts/compare_stress_circle.py` | Compares the FE stresses on the circle with the analytical field (all components, both grains) and reports the deviation |
 | `scripts/export_s22_field.py`, `scripts/plot_s22_field.py` | Export of the opening stress field from the `.odb` (Abaqus Python) and plot next to the analytical field |
 | `scripts/make_c6_runs.py`, `scripts/make_larger_model.py`, `scripts/mesh_lib.py` | Case C6: writes the run folders of the study (base model R = 1 mm, models of larger radius, output requests, boundary condition, material card) |
-| `scripts/c6_extract_abaqus.py`, `scripts/c6_analyze.py` | Case C6 (together with `evaluate_kfield_abaqus.py`): export from the `.odb` (Abaqus Python: J, slip, back stress, stresses, crack faces) and local analysis of the plastic zone (accumulated slip above 1e-4 in at least one integration point), K deviation, CTOD |
-| `scripts/c6_figures/` | Case C6: scripts of the figures and tables of Section 5 (`python c6_overview.py <folder of the C6_run* directories> <png>`, etc.) |
+| `scripts/c6_extract_abaqus.py`, `scripts/c6_analyze.py` | Case C6 (together with `evaluate_kfield_abaqus.py`): export from the `.odb` (Abaqus Python: J, slip, back stress, stresses, crack faces) and local analysis of the plastic zone (total slip, i.e. the sum of the magnitudes of the net slip of the systems, above 1e-4 in at least one integration point), K deviation, CTOD |
+| `scripts/c6_figures/` | Case C6: scripts of the figures, tables and numbers of Section 5 (`python c6_overview.py <folder of the C6_run* directories> <png>`, etc.); the assignment of the scripts to the figures is listed in the [README of the case study](examples/fe_case_study/README.md) |
 | `scripts/reproduce_manuscript_results.py` | Regenerates the numbers and figures of the verification (manuscript, Section 4 and Supplementary material 2, Section B) and checks each value against its tolerance |
 | `tests/` | Automated tests (`pytest`): manuscript checks, interface stresses, finite-element workflow; `validate_stress_interface.py` also runs on its own |
 | `pyproject.toml`, `.github/workflows/tests.yml` | Package definition (`pip install .`) and automatic tests on GitHub |
@@ -314,9 +314,9 @@ If you use this software, please cite the accompanying article and the archived 
 (see `CITATION.cff`):
 
 > C. Baumann, T. Seifert, Crack-tip fields in anisotropic materials and at grain boundaries as boundary
-> conditions for finite element models: the Python toolkit crack_tip_fields and its application to a grain
-> boundary crack with crystal plasticity (submitted).
-> Software: crack_tip_fields v1.0.0, Zenodo, https://doi.org/10.5281/zenodo.24347608
+> conditions for finite element models: the Python toolkit crack_tip_fields and its application to small-scale
+> yielding at a grain boundary crack (submitted).
+> Software: crack_tip_fields v1.1.0, Zenodo, https://doi.org/10.5281/zenodo.24347608
 
 ## License
 

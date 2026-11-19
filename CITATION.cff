@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "crack_tip_fields: crack-tip fields of isotropic, anisotropic and bicrystal cracks and Abaqus K-field boundary conditions"
-version: 1.0.0
-date-released: 2026-11-18
+version: 1.1.0
+date-released: 2026-11-19
 license: AGPL-3.0-only
 repository-code: "https://github.com/CMD-HSO/crack-tip-fields"
 doi: 10.5281/zenodo.24347608

@@ -1,4 +1,4 @@
-"""c6_zone_map.py - accumulated slip and outlines of the plastic zone (KH | LKH) for the model of R = 4 mm.
+"""c6_zone_map.py - total slip and outlines of the plastic zone (KH | LKH) for the model of R = 4 mm.
 Plastic: max over the integration points of sum |gamma_s| > THR (net slip).
 Usage: python c6_zone_map.py <folder with the C6_run* directories> <output png>"""
 import os, sys

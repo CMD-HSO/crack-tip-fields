@@ -27,7 +27,7 @@ Units in this module: mm, N, s, MPa (K therefore has the unit MPa*sqrt(mm)).
 Voigt order of stiffness matrices and stress vectors: 11, 22, 33, 23, 13, 12.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 import numpy as np
 import matplotlib.pyplot as plt

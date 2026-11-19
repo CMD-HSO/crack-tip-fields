@@ -36,7 +36,7 @@ for (lab_, tag_), d_ in D.items():
     KD[(lab_, tag_)] = np.array(kd)
 panels = [("area", (r"area of the zone $A$ [mm$^2$]" if PAPER else "area of the plastic zone [mm$^2$]"), "(a) plastic zone area" + ZNOTE),
           ("r_max_over_R", (r"$r_{\max}/R$ [-]" if PAPER else "$r_{max}$ / R [-]"), "(b) zone size relative to the model radius" + ZNOTE),
-          ("K_dev_percent", (r"$K_I^{\mathrm{FE}}/K_I-1$ [%]" if PAPER else "K deviation from J [%]"), "(c) K from $J$ (contour 15) minus prescribed K"),
+          ("K_dev_percent", (r"deviation $\delta_K$ [%]" if PAPER else "K deviation from J [%]"), "(c) K from $J$ (contour 15) minus prescribed K"),
           ("CTOD_fix", ("CTOD [mm]" if PAPER else "CTOD at 0.01 mm behind the tip [mm]"), "(d) crack-tip opening")]
 fig, ax = plt.subplots(2, 2, figsize=(7.0, 5.3) if PAPER else (11, 8))
 for a, (key, yl, ttl) in zip(ax.ravel(), panels):
